@@ -16,6 +16,8 @@
 
 <button class="btn btn-primary" @onclick="waveCal">Calculate</button>
 
+<button class="btn btn-primary" @onclick="appQuit">Exit</button>
+
 <p>
     <h2>Dipole</h2>
     The Dipole calculation gives the length of one half wavelength taking into account the velocity factor of the wire used (Cu or Fe) to create it.  For a sigle band centre fed dipole
@@ -54,5 +56,8 @@
         wavelength = 300 / frequency;
         loop = wavelength * 0.96;
     }
+
+    private void appQuit()
+    { App.Current.Shutdown(); }
 }
 

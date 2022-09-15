@@ -8,6 +8,9 @@
         mc:Ignorable="d"
         Title="Antenna Calculator" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
         <blazor:BlazorWebView HostPage="wwwroot\index.html" Services="{DynamicResource services}">
             <blazor:BlazorWebView.RootComponents>
                 <blazor:RootComponent Selector="#app" ComponentType="{x:Type local:AntCalc}" />
