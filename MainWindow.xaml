@@ -6,7 +6,7 @@
         xmlns:blazor="clr-namespace:Microsoft.AspNetCore.Components.WebView.Wpf;assembly=Microsoft.AspNetCore.Components.WebView.Wpf"
         xmlns:local="clr-namespace:Antenna_Hybrid_Calculator"
         mc:Ignorable="d"
-        Title="Antenna Calculator" Height="450" Width="800">
+        Title="Antenna Calculator Copyright N.Booth For Mogpie 2022" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
 
