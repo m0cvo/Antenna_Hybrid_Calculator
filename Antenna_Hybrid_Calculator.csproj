@@ -5,11 +5,52 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-	  <RootNamespace>Antenna_Hybrid_Calculator</RootNamespace>  
+	  <RootNamespace>Antenna_Hybrid_Calculator</RootNamespace>
+	  <ApplicationIcon>Mogpie-1.ico</ApplicationIcon>
+	  <SignAssembly>False</SignAssembly>
+	  <PackageId>Antenna Calculator</PackageId>
+	  <Title>Antenna Calculator</Title>
+	  <Authors>N.Booth for Mogpie</Authors>
+	  <Company>Mogpie Software</Company>
+	  <Copyright>N.Booth for Mogpie 2022</Copyright>
+	  <PackageIcon>MogpieMini.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <PackageLicenseExpression>GNU Affero General Public License v3.0 </PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>  
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Mogpie-1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="F:\Nigel\PICTURES\MogpieMini.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="6.0.536" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

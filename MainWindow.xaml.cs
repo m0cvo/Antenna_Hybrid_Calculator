@@ -28,8 +28,6 @@ namespace Antenna_Hybrid_Calculator
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddWpfBlazorWebView();
             Resources.Add("services", serviceCollection.BuildServiceProvider());
-        }
-
-        
+        }        
     }
 }
